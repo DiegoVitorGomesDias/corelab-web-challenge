@@ -1,0 +1,199 @@
+#page-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    padding-bottom: 5rem;
+}
+
+#page-dashboard header {
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.6rem 2rem 1.2rem;
+    width: 100%;
+    background-color: #fff;
+    gap: 2rem;
+    box-shadow: 0px 1px 7px 0px #95959540;
+}
+
+#page-dashboard header span img {
+    display: inline-block;
+    width: 3.2rem;
+}
+
+#page-dashboard header span {
+    display: flex;
+    flex: 0 1 0;
+    align-items: center;
+    gap: 1.8rem;
+    color: #455A64;
+    font-size: 1.2rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#page-dashboard header div {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+#page-dashboard header form {
+    position: relative;
+    height: 2.8rem;
+    max-width: 40rem;
+    flex-shrink: 0;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+
+}
+
+#page-dashboard header form input {
+    appearance: none;
+    border: none;
+    outline: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+#page-dashboard header form input::placeholder {
+    font-size: 1.2rem;
+}
+
+#page-dashboard header form img {
+    display: inline-block;
+    position: absolute;
+    margin: auto 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+    padding: .4rem 1.2rem;
+    color: #9E9E9E;
+    cursor: pointer;
+}
+
+#page-dashboard header>img {
+    flex: 0 1 auto;
+    color: #51646E;
+    padding: 0px 1vw;
+    cursor: pointer;
+}
+
+#page-dashboard>section {
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+@media (width>700px) {
+    #page-dashboard header {
+        padding: 1.2rem 1rem 1rem 3.6rem;
+    }
+
+    #page-dashboard header span {
+        font-size: 1.4rem;
+    }
+}
+
+#page-dashboard>section {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+form#createNote {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    max-height: 10rem;
+    margin: 2.5rem 0 0 0;
+    border-radius: .5rem;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+form#createNote span {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+form#createNote span input {
+    appearance: none;
+    border: none;
+    outline: none;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+form#createNote span img {
+    cursor: pointer;
+}
+
+form#createNote input#description {
+    appearance: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem;
+    color: #50656E;
+    font-size: 13px;
+    font-family: Inter;
+}
+
+#page-dashboard>section>main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min-content;
+}
+
+#page-dashboard>section>main>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+}
+
+#page-dashboard>section>main>h3 {
+    width: 100%;
+    text-align: left;
+    color: #464646;
+    font-size: 1.2rem;
+    padding: .8rem;
+    font-weight: 400;
+    margin-top: 5rem;
+}
+
+@media (width>900px) {
+    #page-dashboard>section>main {
+        max-width: 90vw;
+    }
+
+    #page-dashboard>section>main>div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width>1400px) {
+    #page-dashboard>section>main>div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

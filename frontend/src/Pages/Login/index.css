@@ -1,0 +1,72 @@
+#page-login {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 10vh;
+}
+
+#page-login h1 {
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+}
+
+
+#page-login form {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    max-width: 300px;
+}
+
+#page-login form label+input {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.navlink,
+.navlink:hover {
+    appearance: none;
+    color: currentColor;
+}
+
+#page-login button {
+    appearance: none;
+    border: none;
+    width: 100%;
+    padding: 1rem 4rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    margin: .5rem 0rem;
+    color: currentColor;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+#page-login :nth-child(2)>button {
+    background-color: white;
+    box-shadow: 0px 5px 5px #1212123f;
+    font-weight: bold;
+}
+
+#page-login :nth-child(2)>button:hover,
+#page-login :nth-child(2)>button:focus-visible {
+    background-color: white;
+    box-shadow: 0px 0px 10px #1212123f;
+    color: #4781b8;
+    font-weight: bold;
+}
+
+#page-login :nth-child(2)>.navlink>button {
+    text-decoration: underline;
+}
+
+#page-login :nth-child(2)>.navlink>button:hover,
+#page-login :nth-child(2)>.navlink>button:focus-visible {
+    color: #4781b8;
+    transform: scale(1.005, 1.005);
+}

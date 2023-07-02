@@ -1,0 +1,113 @@
+form.note {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 25px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+form.note>span {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1.2rem 2rem;
+}
+
+form.note span input {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+form.note span img {
+    cursor: pointer;
+}
+
+form.note textarea {
+    appearance: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem;
+    resize: none;
+    background-color: inherit;
+    color: #50656E;
+    font-size: 13px;
+    font-family: Inter;
+}
+
+form.note>div.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 2rem;
+    width: 100%;
+}
+
+form.note>div.actions img {
+    display: inline-block;
+    height: 3rem;
+    aspect-ratio: 1/1;
+    padding: .5rem;
+    transition: all .15s ease-out;
+}
+
+form.note>div.actions>:last-child img {
+    padding: .8rem;
+    border-radius: 100%;
+}
+
+form.note>div.actions>:last-child img:hover {
+    background: #FFE3B3;
+}
+
+form.note>div.actions>span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+form.note>div.actions .inEdit {
+    display: block;
+    border-radius: 100%;
+    background: #FFE3B3;
+    position: relative;
+}
+
+form.note div.pallete {
+    position: absolute;
+    left: 25%;
+    bottom: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: calc(3rem * 6 + 6 * 1.05rem);
+    padding: .5rem;
+    border-radius: 9px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+form.note div.pallete button {
+    appearance: none;
+    border: none;
+    outline: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
