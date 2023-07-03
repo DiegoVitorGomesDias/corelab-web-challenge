@@ -87,7 +87,7 @@ export const Note =
             </span>
             <textarea
                 name="description" id="description"
-                cols={50} rows={10} placeholder="Criar nota..."
+                cols={50} rows={10} placeholder=""
                 disabled={!inEdit}
                 defaultValue={String(data.description)}
                 onChange={({ target }) => data.description = target.value}

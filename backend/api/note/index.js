@@ -54,7 +54,6 @@ export const getNotesFromAuthor = async (ctx) =>
         } 
         catch (error)
         {
-            console.error(error);
             ctx.body = error;
             ctx.status = 500;
         }
@@ -73,7 +72,6 @@ export const getAllNotes = async (ctx) =>
     } 
     catch (error)
     {
-        console.error(error);
         ctx.body = error;
         ctx.status = 500;
     }    
@@ -89,7 +87,6 @@ export const deleteNote = async (ctx) =>
     {
         const verifyToken = jsonwebtoken.verify( token, process.env.JWT_SECRET );
         const authorId = verifyToken.sub;
-        console.log({ authorId, noteId });
         const dataDelete = await prisma.note.deleteMany({ where: { authorId, id: noteId } });
         return ctx.body = dataDelete;
     }

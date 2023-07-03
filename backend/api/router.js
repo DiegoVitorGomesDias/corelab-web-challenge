@@ -7,7 +7,7 @@ export const router = new Router();
 
 router.get("/", (ctx) => ctx.body = "Bem Vindo");
 
-router.get("/users", user.getUsers); //Disabled for Production
+// router.get("/users", user.getUsers); //Disabled for Production
 router.get("/login", user.login);
 router.post("/user", user.createUser);
 router.delete("/user", user.deleteUser);
